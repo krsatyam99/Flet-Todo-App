@@ -77,7 +77,7 @@ class Task(UserControl):
 class MyTodoApp(UserControl):
     def build(self):
         # return Text("todo app") 
-        self.new_task =TextField(hint_text="Add you task you wan to do", expand =True)
+        self.new_task =TextField(hint_text="Add your daily task you want to add", expand =True)
         self.tasks =Column()
         self.filter = Tabs(
             selected_index=0,
@@ -152,7 +152,7 @@ class MyTodoApp(UserControl):
         super().update()
 
 def main(page: Page):
-    page.title = "Todo App"
+    page.title = "Satyam's Todo App"
     page.horizontal_alignment = "center"
 
     # creat a TODO app instance
